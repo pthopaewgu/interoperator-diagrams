@@ -1,0 +1,144 @@
+{
+  "connect.name": "io.confluent.salesforce.NGLX_Platform_Event__e",
+  "fields": [
+    {
+      "default": null,
+      "name": "ReplayId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "CreatedDate",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "CreatedById",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "EventUuid",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "Anticipated_Start_Date__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "Event_Type__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "FromStatus__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "Marketing_Program_Version__c",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "OppId__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "PIDM__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "StudentID__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "ToStatus__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "WGUId__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "ProgramCode__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "Admission_Status__c",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "_ObjectType",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "_EventType",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "NGLX_Platform_Event__e",
+  "namespace": "io.confluent.salesforce",
+  "type": "record"
+}

@@ -1,0 +1,178 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "WGUAINF_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESSMENT_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SCHEDULED_DATE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "EVENT_TYPE_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SYSTEM_TIME_STAMP",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "REFERRAL_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "RESERVATION_NO",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SCHEDULE_TYPE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESSMENT_PROVIDER",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXASSESSMENT.cdc_asa_wguasa.tbl_scheduling_event_nglxassessment",
+  "type": "record"
+}

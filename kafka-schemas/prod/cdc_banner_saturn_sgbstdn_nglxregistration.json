@@ -1,0 +1,175 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "SGBSTDN_PIDM",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_TERM_CODE_EFF",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_STST_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_LEVL_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_FULL_PART_IND",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_RATE_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_PROGRAM_1",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_TERM_CODE_CTLG_1",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_PROGRAM_2",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SGBSTDN_TERM_CODE_CTLG_2",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXREGISTRATION.cdc_banner_saturn.sgbstdn_nglxregistration",
+  "type": "record"
+}

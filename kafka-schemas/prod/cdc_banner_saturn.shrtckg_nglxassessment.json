@@ -1,0 +1,197 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "SHRTCKG_PIDM",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_TERM_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_TCKN_SEQ_NO",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_SEQ_NO",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_GRDE_CODE_FINAL",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_CREDIT_HOURS",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 7,
+                "scale": 3,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_GCHG_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_INCOMPLETE_EXT_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_FINAL_GRDE_CHG_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_FINAL_GRDE_CHG_USER",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SHRTCKG_ACTIVITY_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXASSESSMENT.cdc_banner_saturn.shrtckg_nglxassessment",
+  "type": "record"
+}

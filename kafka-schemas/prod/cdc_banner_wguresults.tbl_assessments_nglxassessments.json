@@ -1,0 +1,206 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "ASSESS_TBLKEY",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 0,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_TITLE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_SCORE",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 8,
+                "scale": 2,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_STATUS_CHK",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_WGUAINFID_FK",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 0,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_CUTSCORE",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 8,
+                "scale": 2,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_PERCENTSCORE",
+            "type": [
+              "null",
+              {
+                "logicalType": "decimal",
+                "precision": 6,
+                "scale": 2,
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSESS_IGNORE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "RECEIVED_TIME",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXASSESSMENT.cdc_banner_wguresults.tbl_assessments_nglxassessments",
+  "type": "record"
+}
