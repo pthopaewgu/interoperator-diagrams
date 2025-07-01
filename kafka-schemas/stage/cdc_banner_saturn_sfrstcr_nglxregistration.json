@@ -1,0 +1,176 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "SFRSTCR_TERM_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_PIDM",
+            "type": [
+              "null",
+              "int"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_CRN",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_RSTS_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_RSTS_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_GRDE_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_GRDE_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_INCOMPLETE_EXT_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "SFRSTCR_USER_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXREGISTRATION.cdc_banner_saturn.sfrstcr_nglxregistration",
+  "type": "record"
+}

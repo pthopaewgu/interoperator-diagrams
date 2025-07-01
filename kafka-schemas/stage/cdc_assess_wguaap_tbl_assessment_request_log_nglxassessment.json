@@ -1,0 +1,146 @@
+{
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "fields": [
+          {
+            "default": null,
+            "name": "ASSMNT_REQUEST_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "PREAPPROVER_PIDM",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "STUDENTS_WGUAINF_ID",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSMNT_CODE",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "default": null,
+            "name": "ACTIVITY_DATE",
+            "type": [
+              "null",
+              {
+                "logicalType": "timestamp-micros",
+                "type": "long"
+              }
+            ]
+          },
+          {
+            "default": null,
+            "name": "ASSMNT_REQUEST_STATUS",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        ],
+        "name": "Data",
+        "type": "record"
+      }
+    },
+    {
+      "default": null,
+      "name": "beforeData",
+      "type": [
+        "null",
+        "Data"
+      ]
+    },
+    {
+      "name": "headers",
+      "type": {
+        "fields": [
+          {
+            "name": "operation",
+            "type": {
+              "name": "operation",
+              "symbols": [
+                "INSERT",
+                "UPDATE",
+                "DELETE",
+                "REFRESH"
+              ],
+              "type": "enum"
+            }
+          },
+          {
+            "name": "changeSequence",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "string"
+          },
+          {
+            "name": "streamPosition",
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "type": "string"
+          },
+          {
+            "default": null,
+            "name": "changeMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "columnMask",
+            "type": [
+              "null",
+              "bytes"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionEventCounter",
+            "type": [
+              "null",
+              "long"
+            ]
+          },
+          {
+            "default": null,
+            "name": "transactionLastEvent",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        ],
+        "name": "Headers",
+        "namespace": "com.attunity.queue.msg",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "DataRecord",
+  "namespace": "com.attunity.queue.msg.BANNER_QLIK_NGLXASSESSMENT.cdc_assess_wguaap.tbl_assessment_request_log_nglxassessment",
+  "type": "record"
+}
